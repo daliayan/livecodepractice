@@ -2,6 +2,6 @@
 // Write a function that returns only the months ending in the letter 'y'.
 
 const letterY = 'y';
-const singleLetter = monthsArray.lastIndexOf(letterY);
+const singleLetter = monthsArray.indexOf(letterY);
 
 console.log(singleLetter);
