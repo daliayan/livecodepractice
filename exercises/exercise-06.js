@@ -2,16 +2,16 @@
 // If you get any of these wrong, stop to think about WHY you were incorrect.
 
 function checkMyScope() {
-  first = "apple";
-  let second = "banana";
+  var first = "apple";
+  var second = "banana";
   var third = "cherry";
-  const fourth = "dragonfruit";
+  var fourth = "dragonfruit";
 
   if (true) {
     first = "elderberry";
-    let second = "fig";
-    var third = "grape";
-    const fourth = "honeydew melon";
+    second = "fig";
+    third = "grape";
+    fourth = "honeydew melon";
   };
 
   console.log('first is', first);
@@ -19,3 +19,4 @@ function checkMyScope() {
   console.log('third is', third);
   console.log('fourth is', fourth);
 };
+// console.log(first);
