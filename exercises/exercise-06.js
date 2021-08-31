@@ -3,9 +3,9 @@
 
 function checkMyScope() {
   var first = "apple";
-  var second = "banana";
+  let second = "banana";
   var third = "cherry";
-  var fourth = "dragonfruit";
+   fourth = "dragonfruit";
 
   if (true) {
     first = "elderberry";
@@ -14,9 +14,11 @@ function checkMyScope() {
     fourth = "honeydew melon";
   };
 
-  console.log('first is', first);
-  console.log('second is', second);
-  console.log('third is', third);
-  console.log('fourth is', fourth);
+  console.log('first is', first, '-- Using a Var is only local - the value of the previously defined fruit is changed');
+  console.log('second is', second, '-- Using a Let is local and the value of the previous fruit is changed');
+  console.log('third is', third, '-- Using a Var is only local - the value of the previously defined fruit is changed');
+  console.log('fourth is', fourth, '-- Unable to use Const because it cannot be reassigned value. Meanwhile LET/VAR can change.');
 };
-// console.log(first);
+
+
+console.log(checkMyScope());

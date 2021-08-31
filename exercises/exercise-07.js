@@ -8,18 +8,24 @@
     // console.log(petsName);
     // var petsName = 'Goblin';
 
+    //Returns undefined because VAR isn't hoisted globally
+
 // Example 2
 
-    // console.log(petsName);
-    // let petsName = 'Grampa';
+    // console.log(petsName1);
+    // let petsName1 = 'Grampa';
+
+    // Uncaught reference error because LET isn't defined before it's being called
 
 
 // Example 3
 
     // sayHi();
     // function sayHi() {
-    //   console.log('hey!');
+    //   console.log('hellllooooo!');
     // };
+
+    // No error even though the function isn't defined before it's called - functions are know locally
 
 
 // Example 4
@@ -34,6 +40,8 @@
     //   return a + b;
     // };
 
+    // No error the functions are know locally
+
 
 // Example 5
 
@@ -41,6 +49,8 @@
     // const sayHi = () => {
     //   console.log('hello there!');
     // };
+
+    //Can't access the function expression before it is initalized.
 
 // Example 6
 
@@ -54,6 +64,8 @@
     //   return a + b;
     // };
 
+    //Can't access the function expression before it is initalized.
+
 // Example 7
 
     // sayHi();
@@ -65,3 +77,5 @@
     // const add = (a, b) => {
     //   return a + b;
     // };
+    
+    //Can't access the function expression before it is initalized.
