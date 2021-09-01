@@ -14,14 +14,14 @@
 
 // const orderedMovies = movieList;
 
-function orderedMovies(release_date) {
-    if (release_date <= 1995) {
+function orderedMovies(movieList, release_date) {
+    if (movieList.release_date <= 1995) {
         console.log(movieList.release_date);
     } else {
         return movieList;
     };
 };
 
-// console.log(movieList);
+console.log(orderedMovies);
 
 // console.log(movieList);

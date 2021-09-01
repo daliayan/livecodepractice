@@ -11,13 +11,13 @@ function checkMyScope() {
     first = "elderberry";
     second = "fig";
     third = "grape";
-    fourth = "honeydew melon";
+    const fourth = "honeydew melon";
   };
 
   console.log('first is', first, '-- Using a Var is only local - the value of the previously defined fruit is changed');
   console.log('second is', second, '-- Using a Let is local and the value of the previous fruit is changed');
   console.log('third is', third, '-- Using a Var is only local - the value of the previously defined fruit is changed');
-  console.log('fourth is', fourth, '-- Unable to use Const because it cannot be reassigned value. Meanwhile LET/VAR can change.');
+  console.log('fourth is', fourth, '-- Use Const when you dont want variable to change values. Meanwhile LET/VAR can change.');
 };
 
 

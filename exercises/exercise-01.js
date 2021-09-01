@@ -5,3 +5,7 @@ const letterY = 'y';
 const singleLetter = monthsArray.indexOf(letterY);
 
 console.log(singleLetter);
+
+console.log(monthsArray.length);
+
+console.log(monthsArray[monthsArray.length - 1]);
