@@ -14,7 +14,7 @@
 
 // const orderedMovies = movieList;
 
-function orderedMovies(movieList, release_date) {
+function orderedMovies(movieList) {
     if (movieList.release_date <= 1995) {
         console.log(movieList.release_date);
     } else {
